@@ -1,0 +1,13 @@
+<div id="fullpage"> <div class="section" id="section0">WHATEVER</div> <div class="section" id="section1">WHATEVERssss2</div> <div class="section" id="section2">WHATEVER3</div> </div> <script type="text/javascript">$(document).ready(function() {
+    $('.nav').find('.active').removeClass('active');
+            $('#liHome').addClass('active');
+
+      $('#fullpage').fullpage({
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+        responsive: 0,
+        resize: false
+
+  });
+});</script>
