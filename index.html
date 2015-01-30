@@ -1,6 +1,6 @@
-<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.46509657.css"> <link rel="stylesheet" href="styles/main.f6973528.css">  <body ng-app="eliasnilssonApp"> <!--[if lt IE 7]>
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.46509657.css"> <link rel="stylesheet" href="styles/main.283d3e80.css"> <link href="http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300italic,300" rel="stylesheet" type="text/css">  <body ng-app="eliasnilssonApp"> <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <!-- Add your site or application content here --> <!-- Fixed navbar --> <nav class="navbar navbar-default navbar-fixed-top"> <div class="container"> <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">eliasnilsson</a> </div> <div id="navbar" class="navbar-collapse collapse navbar-right"> <ul class="nav navbar-nav"> <li class="active" id="liHome"><a href="#/"><span class="glyphicon glyphicon-home"></span> Home</a></li> <li id="liAbout"><a href="#/about">About</a></li> <li id="liContact"><a href="#/contact">Contact</a></li> </ul> </div><!--/.nav-collapse --> </div> </nav> <div class="container"> <div ng-view=""></div> <div class="footer"> <p><span class="glyphicon glyphicon-heart-empty"></span> from Elias</p> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    <![endif]--> <!-- Add your site or application content here --> <!-- Fixed navbar --> <nav class="navbar navbar-inverse navbar-fixed-top"> <div class="container"> <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#/">eliasnilsson</a> </div> <div id="navbar" class="navbar-collapse collapse navbar-right"> <ul class="nav navbar-nav"> <li id="liHome" title="Hem"><a href="#/"><span class="glyphicon glyphicon-home"></span></a></li> <li id="liAbout" title="Tidslinje"><a href="#/about"><span class="glyphicon glyphicon-time"></span></a></li> <li id="liContact"><a href="#/contact">Contact</a></li> </ul> </div><!--/.nav-collapse --> </div> </nav> <div class="container-fluid"> <div ng-view=""></div> <div class="container"> <div class="footer"> <p><span class="glyphicon glyphicon-heart-empty"></span> from Elias</p> </div> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -8,10 +8,10 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');</script> <!--[if lt IE 9]>
     <script src="scripts/oldieshim.76f279db.js"></script>
-    <![endif]--> <script src="scripts/vendor.2f835296.js"></script> <script src="scripts/scripts.2025dd3a.js"></script> <script type="text/javascript">$(document).ready(function(){
+    <![endif]--> <script src="scripts/vendor.2f835296.js"></script> <script src="scripts/scripts.860c1f68.js"></script> <script type="text/javascript">$(document).ready(function(){
           if (window.location.href.indexOf('about')!=-1) {
-            $('.nav').find('.active').removeClass('active');
-            $('#liAbout').addClass('active');
+            $('.nav').find('.active').removeClass('active-blue');
+            $('#liAbout').addClass(' active-red');
           }
           else if (window.location.href.indexOf('contact')!=-1) {
             $('.nav').find('.active').removeClass('active');
@@ -19,7 +19,7 @@
           }
           else
           {
-            $('.nav').find('.active').removeClass('active');
-            $('#liHome').addClass('active');
+            $('.nav').find('.active').removeClass('active-red');
+            $('#liHome').addClass('active-blue');
           }
         });</script>  

@@ -3,4 +3,48 @@
          window.location.replace(window.location.href+'?rel');
          location.reload();
     }
-});</script> <p>This is the about view.</p>
+});</script> <h1 class="largeHeader text-center">Tidslinje</h1> <section id="cd-timeline" class="cd-container"> <div class="cd-timeline-block"> <div class="cd-timeline-content long-shadow"> <h2>Söderslättsgymnasiet, Trelleborg</h2> <p>Teknik College - inriktning Digital Design</p> <span class="cd-date">2008 - 2011</span> </div> <!-- cd-timeline-content --> </div> <!-- cd-timeline-block --> <div class="cd-timeline-block"> <div class="cd-timeline-content long-shadow"> <h2>Jönköpings Tekniska Högskola</h2> <p>Datateknik, Inbyggda system</p> <span class="cd-date">2011</span> </div> <!-- cd-timeline-content --> </div> <!-- cd-timeline-block --> <div class="cd-timeline-block"> <div class="cd-timeline-content long-shadow"> <h2>Jönköpings Tekniska Högskola</h2> <p>Övergick till:<br> Datateknik, Mjukvaruutveckling och mobila plattformar</p> <span class="cd-date">2012</span> </div> <!-- cd-timeline-content --> </div> <!-- cd-timeline-block --> <div class="cd-timeline-block"> <div class="cd-timeline-content long-shadow"> <h2>M_SOLUTION</h2> <p>Examensarbete</p> <span class="cd-date">2015</span> </div> <!-- cd-timeline-content --> </div> <!-- cd-timeline-block --> <div class="cd-timeline-block"> <div class="cd-timeline-content long-shadow"> <h2>Jönköpings Tekniska Högskola</h2> <p>Examen</p> <span class="cd-date">2015</span> </div> <!-- cd-timeline-content --> </div> <!-- cd-timeline-block --> </section> <!-- cd-timeline --> <script type="text/javascript">$(document).ready(function($){
+	var $timeline_block = $('.cd-timeline-block');
+
+	//hide timeline blocks which are outside the viewport
+	$timeline_block.each(function(){
+			$(this).find('.cd-timeline-content').addClass('is-hidden');
+	});
+
+	/*$timeline_block.each(function(){
+			$(this).find('.cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+	});*/
+
+	function bounceIn(elements, cb, timeout) {
+		var i = 0;
+		var l = elements.length;
+
+		(function fn(){
+			cb.call(elements[i++]);
+			if (i < l){
+				setTimeout(fn, timeout);
+			}
+		}());
+	};
+
+	bounceIn($timeline_block, function(){
+		$(this).find('.cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+	}, 350);
+
+
+/*$timeline_block.each(function(){
+		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+			$(this).find('.cd-timeline-content').addClass('is-hidden');
+		}
+	});
+
+	//on scolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		$timeline_block.each(function(){
+			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*1 && $(this).find('.cd-timeline-content').hasClass('is-hidden') ) {
+				$(this).find('.cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+			}
+		});
+	});*/
+
+});</script>
