@@ -2223,20 +2223,22 @@ var View_StartComponent0 = (function (_super) {
         var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
         this._el_0 = __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["createRenderElement"](this.renderer, parentRenderNode, 'div', new __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["InlineArray2"](2, 'class', 'header-container'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n  ', null);
-        this._el_2 = __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["createRenderElement"](this.renderer, this._el_0, 'div', new __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["InlineArray2"](2, 'class', 'header-content'), null);
+        this._el_2 = __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["createRenderElement"](this.renderer, this._el_0, 'div', new __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["InlineArray2"](2, 'class', 'header-title'), null);
         this._text_3 = this.renderer.createText(this._el_2, '\n    ', null);
         this._el_4 = __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["createRenderElement"](this.renderer, this._el_2, 'span', new __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["InlineArray2"](2, 'class', 'md-display-3'), null);
         this._text_5 = this.renderer.createText(this._el_4, 'Amoeba', null);
         this._text_6 = this.renderer.createText(this._el_2, '\n  ', null);
-        this._text_7 = this.renderer.createText(this._el_0, '\n', null);
-        this._text_8 = this.renderer.createText(parentRenderNode, '\n\n\n', null);
-        this._el_9 = __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["createRenderElement"](this.renderer, parentRenderNode, 'button', new __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["InlineArray4"](4, 'color', 'primary', 'md-raised-button', ''), null);
-        this.compView_9 = new __WEBPACK_IMPORTED_MODULE_9__gendir_node_modules_angular_material_button_button_ngfactory__["a" /* View_MdButton0 */](this.viewUtils, this, 9, this._el_9);
-        this._MdButton_9_3 = new __WEBPACK_IMPORTED_MODULE_9__gendir_node_modules_angular_material_button_button_ngfactory__["b" /* Wrapper_MdButton */](new __WEBPACK_IMPORTED_MODULE_10__angular_core_src_linker_element_ref__["a" /* ElementRef */](this._el_9), this.renderer);
-        this._text_10 = this.renderer.createText(null, 'Primär', null);
-        this.compView_9.create(this._MdButton_9_3.context);
-        this._text_11 = this.renderer.createText(parentRenderNode, '\n', null);
-        var disposable_0 = __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["subscribeToRenderElement"](this, this._el_9, new __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["InlineArray8"](6, 'mousedown', null, 'focus', null, 'blur', null), this.eventHandler(this.handleEvent_9));
+        this._text_7 = this.renderer.createText(this._el_0, '\n\n  ', null);
+        this._el_8 = __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["createRenderElement"](this.renderer, this._el_0, 'div', new __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["InlineArray2"](2, 'class', 'header-content'), null);
+        this._text_9 = this.renderer.createText(this._el_8, '\n    ', null);
+        this._el_10 = __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["createRenderElement"](this.renderer, this._el_8, 'button', new __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["InlineArray2"](2, 'md-raised-button', ''), null);
+        this.compView_10 = new __WEBPACK_IMPORTED_MODULE_9__gendir_node_modules_angular_material_button_button_ngfactory__["a" /* View_MdButton0 */](this.viewUtils, this, 10, this._el_10);
+        this._MdButton_10_3 = new __WEBPACK_IMPORTED_MODULE_9__gendir_node_modules_angular_material_button_button_ngfactory__["b" /* Wrapper_MdButton */](new __WEBPACK_IMPORTED_MODULE_10__angular_core_src_linker_element_ref__["a" /* ElementRef */](this._el_10), this.renderer);
+        this._text_11 = this.renderer.createText(null, 'Klicka här', null);
+        this.compView_10.create(this._MdButton_10_3.context);
+        this._text_12 = this.renderer.createText(this._el_8, '\n  ', null);
+        this._text_13 = this.renderer.createText(this._el_0, '\n', null);
+        var disposable_0 = __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["subscribeToRenderElement"](this, this._el_10, new __WEBPACK_IMPORTED_MODULE_2__angular_core_src_linker_view_utils__["InlineArray8"](6, 'mousedown', null, 'focus', null, 'blur', null), this.eventHandler(this.handleEvent_10));
         this.init(null, (this.renderer.directRenderer ? null : [
             this._el_0,
             this._text_1,
@@ -2246,40 +2248,40 @@ var View_StartComponent0 = (function (_super) {
             this._text_5,
             this._text_6,
             this._text_7,
-            this._text_8,
-            this._el_9,
-            this._text_10,
-            this._text_11
+            this._el_8,
+            this._text_9,
+            this._el_10,
+            this._text_11,
+            this._text_12,
+            this._text_13
         ]), [disposable_0]);
         return null;
     };
     View_StartComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === __WEBPACK_IMPORTED_MODULE_8__angular_material_button_button__["b" /* MdButton */]) && ((9 <= requestNodeIndex) && (requestNodeIndex <= 10)))) {
-            return this._MdButton_9_3.context;
+        if (((token === __WEBPACK_IMPORTED_MODULE_8__angular_material_button_button__["b" /* MdButton */]) && ((10 <= requestNodeIndex) && (requestNodeIndex <= 11)))) {
+            return this._MdButton_10_3.context;
         }
         return notFoundResult;
     };
     View_StartComponent0.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_9_0_0 = 'primary';
-        this._MdButton_9_3.check_color(currVal_9_0_0, throwOnChange, false);
-        if (this._MdButton_9_3.ngDoCheck(this, this._el_9, throwOnChange)) {
-            this.compView_9.markAsCheckOnce();
+        if (this._MdButton_10_3.ngDoCheck(this, this._el_10, throwOnChange)) {
+            this.compView_10.markAsCheckOnce();
         }
-        this._MdButton_9_3.checkHost(this, this.compView_9, this._el_9, throwOnChange);
-        this.compView_9.internalDetectChanges(throwOnChange);
+        this._MdButton_10_3.checkHost(this, this.compView_10, this._el_10, throwOnChange);
+        this.compView_10.internalDetectChanges(throwOnChange);
     };
     View_StartComponent0.prototype.destroyInternal = function () {
-        this.compView_9.destroy();
+        this.compView_10.destroy();
     };
     View_StartComponent0.prototype.visitProjectableNodesInternal = function (nodeIndex, ngContentIndex, cb, ctx) {
-        if (((nodeIndex == 9) && (ngContentIndex == 0))) {
-            cb(this._text_10, ctx);
+        if (((nodeIndex == 10) && (ngContentIndex == 0))) {
+            cb(this._text_11, ctx);
         }
     };
-    View_StartComponent0.prototype.handleEvent_9 = function (eventName, $event) {
-        this.compView_9.markPathToRootAsCheckOnce();
+    View_StartComponent0.prototype.handleEvent_10 = function (eventName, $event) {
+        this.compView_10.markPathToRootAsCheckOnce();
         var result = true;
-        result = (this._MdButton_9_3.handleEvent(eventName, $event) && result);
+        result = (this._MdButton_10_3.handleEvent(eventName, $event) && result);
         return result;
     };
     return View_StartComponent0;

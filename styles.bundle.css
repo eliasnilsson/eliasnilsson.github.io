@@ -554,11 +554,14 @@ md-toolbar {
 .header-container {
   height: 500px;
   margin-bottom: 40px;
+  text-align: center;
   background-color: #00e676; }
 
+.header-title {
+  padding-top: 160px; }
+
 .header-content {
-  padding-top: 160px;
-  text-align: center; }
+  margin: 60px 0; }
 
 /**
  * Applies styles for users in high contrast mode. Note that this only applies
@@ -571,6 +574,9 @@ Global styles
 html, body {
   margin: 0; }
 
+/*
+Text
+ */
 h1, h2, h3, h4, h5, h6, p, span {
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
@@ -614,5 +620,14 @@ h4 {
 .md-subhead {
   font-weight: 300;
   font-size: 16px; }
+
+/*
+Buttons
+ */
+button {
+  font-size: 18px;
+  text-transform: uppercase; }
+  button span {
+    font-weight: 600; }
 
 /*# sourceMappingURL=styles.bundle.map*/
